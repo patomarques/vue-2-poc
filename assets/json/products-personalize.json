@@ -1,0 +1,44 @@
+{
+    "products": [{
+        "easy_hd": {
+            "title": "Product easy_hd",
+            "price": 10.0,
+            "equipamentQty": 1
+        },
+        "fun_plus": {
+            "title": "Product fun_plus",
+            "price": 20.0,
+            "equipamentQty": 1
+        },
+        "mega_hd": {
+            "title": "Product mega_hd",
+            "price": 30.0,
+            "equipamentQty": 1
+        },
+        "experience": {
+            "title": "Product experience",
+            "price": 40.0,
+            "equipamentQty": 1
+        },
+        "easy_hd_2": {
+            "title": "Product easy_hd 2",
+            "price": 20.0,
+            "equipamentQty": 2
+        },
+        "fun_plus_2": {
+            "title": "Product fun_plus_2",
+            "price": 40.0,
+            "equipamentQty": 2
+        },
+        "mega_hd_2": {
+            "title": "Product mega_hd_2",
+            "price": 60.0,
+            "equipamentQty": 2
+        },
+        "experience_2": {
+            "title": "Product experience_2",
+            "price": 80.0,
+            "equipamentQty": 2
+        }
+    }]
+}

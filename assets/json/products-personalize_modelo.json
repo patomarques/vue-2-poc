@@ -1,0 +1,372 @@
+{
+    "products": [{
+        "easy_hd": {
+            "id": "easy_hd",
+            "title": "EASY HD",
+            "first_month": 50.00,
+            "second_month": 100.00,
+            "isHd": true,
+            "equipamentQty": 1,
+            "channels": [{
+                    "id": "1",
+                    "title": "channel example 1",
+                    "price": 50.00,
+                    "additional_channels": 5
+                },
+                {
+                    "id": "2",
+                    "title": "channel example 2",
+                    "price": 20.00,
+                    "additional_channels": 8
+                }
+            ],
+            "equipament_extras": [{
+                    "id": "hd",
+                    "title": "HD",
+                    "price": 789.0
+                },
+                {
+                    "id": "plus",
+                    "title": "HD",
+                    "price": 123.0
+                }
+            ],
+            "service_aditionals": [{
+                    "id": "1",
+                    "title": "service easy 1",
+                    "price": 59.90
+                },
+                {
+                    "id": "2",
+                    "title": "service easy 2",
+                    "price": 69.90
+                }
+            ]
+        },
+        "fun_hd": {
+            "id": "fun_hd",
+            "title": "FUN HD",
+            "first_month": 90.00,
+            "second_month": 190.00,
+            "isHd": true,
+            "equipamentQty": 1,
+            "channels": [{
+                    "id": "1",
+                    "title": "channel example 1",
+                    "price": 40.00,
+                    "additional_channels": 5
+                },
+                {
+                    "id": "2",
+                    "title": "channel example 2",
+                    "price": 23.00,
+                    "additional_channels": 8
+                }
+            ],
+            "equipament_extras": [{
+                    "id": "hd",
+                    "title": "HD",
+                    "price": 99.0
+                },
+                {
+                    "id": "plus",
+                    "title": "HD",
+                    "price": 89.0
+                }
+            ],
+            "service_aditionals": [{
+                    "id": "1",
+                    "title": "service easy 1",
+                    "price": 59.90
+                },
+                {
+                    "id": "2",
+                    "title": "service easy 2",
+                    "price": 69.90
+                }
+            ]
+        },
+        "mega_hd": {
+            "id": "mega_hd",
+            "title": "MEGA HD",
+            "first_month": 250.00,
+            "second_month": 300.00,
+            "isHd": true,
+            "equipamentQty": 1,
+            "channels": [{
+                    "id": "1",
+                    "title": "channel example 1",
+                    "price": 50.00,
+                    "additional_channels": 5
+                },
+                {
+                    "id": "2",
+                    "title": "channel example 2",
+                    "price": 20.00,
+                    "additional_channels": 8
+                },
+                {
+                    "id": "3",
+                    "title": "channel example 3",
+                    "price": 30.00,
+                    "additional_channels": 3
+                }
+            ],
+            "equipament_extras": [{
+                    "id": "hd",
+                    "title": "HD",
+                    "price": 789.0
+                },
+                {
+                    "id": "plus",
+                    "title": "HD",
+                    "price": 123.0
+                }
+            ],
+            "service_aditionals": [{
+                    "id": "1",
+                    "title": "service easy 1",
+                    "price": 59.90
+                },
+                {
+                    "id": "2",
+                    "title": "service easy 2",
+                    "price": 69.90
+                }
+            ]
+        },
+        "experience": {
+            "id": "experience",
+            "title": "Experience",
+            "first_month": 250.00,
+            "second_month": 300.00,
+            "isHd": true,
+            "equipamentQty": 1,
+            "channels": [{
+                    "id": "1",
+                    "title": "channel example 1",
+                    "price": 50.00,
+                    "additional_channels": 5
+                },
+                {
+                    "id": "2",
+                    "title": "channel example 2",
+                    "price": 20.00,
+                    "additional_channels": 8
+                },
+                {
+                    "id": "3",
+                    "title": "channel example 3",
+                    "price": 30.00,
+                    "additional_channels": 3
+                }
+            ],
+            "equipament_extras": [{
+                    "id": "hd",
+                    "title": "HD",
+                    "price": 789.0
+                },
+                {
+                    "id": "plus",
+                    "title": "HD",
+                    "price": 123.0
+                }
+            ],
+            "service_aditionals": [{
+                    "id": "1",
+                    "title": "service easy 1",
+                    "price": 59.90
+                },
+                {
+                    "id": "2",
+                    "title": "service easy 2",
+                    "price": 69.90
+                }
+            ]
+        },
+        "easy_hd_2": {
+            "id": "easy_hd_2",
+            "title": "EASY HD 2",
+            "first_month": 55.00,
+            "second_month": 105.00,
+            "isHd": true,
+            "equipamentQty": 2,
+            "channels": [{
+                    "id": "1",
+                    "title": "channel example 1",
+                    "price": 50.00,
+                    "additional_channels": 5
+                },
+                {
+                    "id": "2",
+                    "title": "channel example 2",
+                    "price": 25.00,
+                    "additional_channels": 8
+                }
+            ],
+            "equipament_extras": [{
+                    "id": "hd",
+                    "title": "HD",
+                    "price": 785.0
+                },
+                {
+                    "id": "plus",
+                    "title": "HD",
+                    "price": 125.0
+                }
+            ],
+            "service_aditionals": [{
+                    "id": "1",
+                    "title": "service easy 1",
+                    "price": 55.90
+                },
+                {
+                    "id": "2",
+                    "title": "service easy 2",
+                    "price": 65.90
+                }
+            ]
+        },
+        "fun_hd_2": {
+            "id": "fun_hd_2",
+            "title": "FUN HD 2",
+            "first_month": 95.00,
+            "second_month": 195.00,
+            "isHd": true,
+            "equipamentQty": 2,
+            "channels": [{
+                    "id": "1",
+                    "title": "channel example 1",
+                    "price": 45.00,
+                    "additional_channels": 5
+                },
+                {
+                    "id": "2",
+                    "title": "channel example 2",
+                    "price": 25.00,
+                    "additional_channels": 8
+                }
+            ],
+            "equipament_extras": [{
+                    "id": "hd",
+                    "title": "HD",
+                    "price": 95.0
+                },
+                {
+                    "id": "plus",
+                    "title": "HD",
+                    "price": 85.0
+                }
+            ],
+            "service_aditionals": [{
+                    "id": "1",
+                    "title": "service easy 1",
+                    "price": 55.90
+                },
+                {
+                    "id": "2",
+                    "title": "service easy 2",
+                    "price": 65.90
+                }
+            ]
+        },
+        "mega_hd_2": {
+            "id": "mega_hd_2",
+            "title": "MEGA HD 2",
+            "first_month": 250.00,
+            "second_month": 300.00,
+            "isHd": true,
+            "equipamentQty": 2,
+            "channels": [{
+                    "id": "1",
+                    "title": "channel example 1",
+                    "price": 50.00,
+                    "additional_channels": 5
+                },
+                {
+                    "id": "2",
+                    "title": "channel example 2",
+                    "price": 20.00,
+                    "additional_channels": 8
+                },
+                {
+                    "id": "3",
+                    "title": "channel example 3",
+                    "price": 30.00,
+                    "additional_channels": 3
+                }
+            ],
+            "equipament_extras": [{
+                    "id": "hd",
+                    "title": "HD",
+                    "price": 789.0
+                },
+                {
+                    "id": "plus",
+                    "title": "HD",
+                    "price": 123.0
+                }
+            ],
+            "service_aditionals": [{
+                    "id": "1",
+                    "title": "service easy 1",
+                    "price": 59.90
+                },
+                {
+                    "id": "2",
+                    "title": "service easy 2",
+                    "price": 69.90
+                }
+            ]
+        },
+        "experience_2": {
+            "id": "experience_2",
+            "title": "Experience 2",
+            "first_month": 299.00,
+            "second_month": 399.00,
+            "isHd": true,
+            "equipamentQty": 2,
+            "channels": [{
+                    "id": "1",
+                    "title": "channel example 1",
+                    "price": 99.00,
+                    "additional_channels": 99
+                },
+                {
+                    "id": "2",
+                    "title": "channel example 2",
+                    "price": 29.00,
+                    "additional_channels": 89
+                },
+                {
+                    "id": "3",
+                    "title": "channel example 3",
+                    "price": 990.00,
+                    "additional_channels": 39
+                }
+            ],
+            "equipament_extras": [{
+                    "id": "hd",
+                    "title": "HD",
+                    "price": 999.0
+                },
+                {
+                    "id": "plus",
+                    "title": "HD",
+                    "price": 99.0
+                }
+            ],
+            "service_aditionals": [{
+                    "id": "1",
+                    "title": "service easy 1",
+                    "price": 78.90
+                },
+                {
+                    "id": "2",
+                    "title": "service easy 2",
+                    "price": 97.90
+                }
+            ]
+        }
+    }]
+}
