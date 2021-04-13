@@ -14,10 +14,9 @@
         <div class="row">
             <div class="col-xs-12 text-center">
                 <h2>Pós-pago</h2>
-                
             </div>
         </div>
-        <div class="row mb-3">
+        <div class="row mb-3" >
             <div class="col-xs-12 text-center">
                 <h3>Escolha a quantidade de equipamentos, pra começar a personalizar.</h3>
 
@@ -29,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="row product-boxes">
+        <div class="row product-boxes" >
             <div class="col-xs-12 text-center">
                 <h3>Escolha 1 dos 3 pacotes básicos.</h3>
             </div>
@@ -70,19 +69,31 @@
 
                 <p>Ah, os canais e preços podem mudar, de acordo com o pacote básico escolhido.</p>
 
-                <ul class="additional-channels list-unstyled">
-                    <li class="additional-channels__item panel">
-                        <input type="checkbox" name="additional-channels_checkbox">
-                        <!-- <div class="icon-channel ">
-                            <img src="https://logodownload.org/wp-content/uploads/2018/11/nick-jr-logo.png" alt="" class="img-responsive img-rounded img-thumbnail">
-                        </div> -->
-                        <div class="info">
-                            <span class="channel-name bodyPrimary bold">National-Geographic-Wild-HD</span>
-                            <span class="price bodySecondary">
-                                <strong class="bold bodyPrimary">R$ 999,99</strong>
-                                /mês
-                            </span>
-                            <span class="number-channels bodyPrimary">8 canais</span>
+                <ul class="additional-channels list-unstyled" v-if="channels.length > 0"  v-for="channel in channels">
+                    <li :id="channel.id" class="additional-channels__item panel row">
+
+                        <div class="col-xs-1">
+                            <input type="checkbox" name="additional-channels_checkbox" v-bind:value="channel.id" v-model="channelsSelected">
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="icon-channel ">
+                                <img src="https://logodownload.org/wp-content/uploads/2018/11/nick-jr-logo.png" alt="" class="img-responsive img-rounded">
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="info">
+                                <span class="channel-name bodyPrimary bold">{{ channel.title }}</span>
+                                <span class="price bodySecondary">
+                                    <strong class="bold bodyPrimary">R$ {{ channel.price }}</strong>
+                                    /mês
+                                </span>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#">
+                                <span class="number-channels bodyPrimary">{{ channel.additional_channels }} canais</span>
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -94,8 +105,14 @@
                     <h3>Total</h3>
                 </span>
                 <span class="pull-right">
-                    <h4>R$ {{ total }}</h4>
+                    <h4>R$ {{ total_first }} / 1º mês</h4>
+                    <h5>R$ {{ total_second }} / 2º mês</h5>
                 </span>
+            </div>
+        </div>
+        <div class="row"  v-if="products.length == 0">
+            <div class="col-xs-12 text-center">
+                <h3>Os produtos não puderam ser carregados!</h3>
             </div>
         </div>
     </div>
@@ -112,17 +129,20 @@
             data: {
                title: 'POC - Vue Personalize',
                productId: 0,
-               channelIds: {},
-               total: 0 ,
+               channels: {},
+               channelsSelected: [],
+               total_first: 0 ,
+               total_second: 0,
                equipamentQty: 1,
-               products: {}
+               products: {},
+               flagProducts: true
             },            
             mounted() {
                 axios
                 .get('http://localhost:3000/products')
                 .then(response => {
                     (this.info = response);
-                    console.log('response', response);
+                    //console.log('response', response);
 
                     if(response.data != undefined) {
                         this.products = response.data[0];
@@ -130,16 +150,50 @@
                 })
                 .catch(e => {
                     console.log('this.errors', e);
+                    flagProducts = false;
                 })
             },
             watch: {
                 productId: function() {
-                    //this.total += 
-                    console.log('toda vez que o produto é alterado esse evento dispara', typeof this.products);                    
-                    console.log(this.products.find(item => item.id === this.productId));
+                    var obj = this.products;
+                    var channels = obj[this.productId].channels ; 
+                    this.channels = channels;
+
+                    this.calculateTotal();
+                },
+                equipamentQty: function() {
+                    this.productId = 0;
+                    this.channels = {};
+                    this.resetTotal();
+                },
+                channelsSelected: function() {
+                    this.calculateTotal();
                 }
             },
             methods: {
+                calculateTotal: function(){
+                    if(this.productId != 0){
+                        this.total_first = this.products[this.productId].first_month;
+                        this.total_second = this.products[this.productId].second_month;
+                    }
+
+                    if(this.channelsSelected.length > 0){
+                        var totalChannels = 0;
+
+                        for(var index; index < channelsSelected.length; index++){
+
+                        }
+                    }
+                },
+                resetForm: function(){
+                    this.total_first = 0;
+                    this.total_second = 0;
+
+                    this.channelsSelected = [];
+                },
+                formatMoneyReal: function(){
+                    //
+                }
                 
             },
             computed: {
